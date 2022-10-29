@@ -1,0 +1,19 @@
+.input {
+  display: block;
+}
+
+.input span {
+  display: block;
+  margin-bottom: var(--space-small);
+  color: white;
+  font-size: var(--default-text-size);
+  font-weight: bold;
+}
+
+.searching-content{
+  color: grey;
+  background-color: black;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 30px;
+}
