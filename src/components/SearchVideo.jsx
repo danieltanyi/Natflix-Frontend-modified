@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-//import { getCollection } from "../../scripts/fireStore";
 import "../../styles/serched-video.sass";
 import VideoThumbNail from "./VideoThumbNail";
 import StatusError from "../status/StatusError";
@@ -20,7 +19,7 @@ export default function SearchedVideo() {
 
         for (const category of data) {
           const categoryData = await getCollection(
-            `netflixClone/${category.id}/content`
+            `natflix-frontend/${category.id}/content`
           );
           setSearching((oldData) => [...oldData, ...categoryData]);
         }
